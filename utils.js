@@ -94,7 +94,9 @@ function removeNegativeTag(valuesArray) {
   return copyValuesArray;
 }
 function printAnswer(answer) {
-  console.log(`${chalk.whiteBright.bgGreenBright.bold('Answer:')} ${answer}`);
+  console.log(
+    `${chalk.whiteBright.bgGreenBright.bold('Answer:')} ${answer} \n`
+  );
 }
 
 module.exports = {

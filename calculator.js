@@ -59,13 +59,19 @@ function calculator(args) {
       let base = valueArray[0];
       let exp = valueArray[1];
       printAnswer(Math.pow(base, exp));
+      if (valueArray.length > 2)
+        console.warn(
+          chalk.black.bgYellowBright.bold(
+            'Use 2 values, only the first 2 are used !'
+          )
+        );
       break;
     case 'sqrt':
       printAnswer(Math.sqrt(valueArray[0]));
       if (valueArray.length > 1)
         console.warn(
           chalk.black.bgYellowBright.bold(
-            'Use a single value, only the first value is used !'
+            'Use a single value, only the first is used !'
           )
         );
       break;
